@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Booksky</h1>
+        <input type="text" id="search-input" placeholder="Search books or authors...">
+    </div>
+
+    <div class="container" id="books-container">
+        <!-- Books will be loaded dynamically via JS -->
+    </div>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add New Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input" required>
+            <input type="text" placeholder="Book Author" id="book-author-input" required>
+            <textarea placeholder="Short description" id="book-description-input" required></textarea>
+            <div class="popup-buttons">
+                <button id="add-book">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </div>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
